@@ -15,8 +15,8 @@ public class App
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie s1=context.getBean("movie1",Movie.class);
         Movie s2=context.getBean("movie1",Movie.class);
-        System.out.print(s1.getActor1().getName());
-        System.out.print(s1.getActor1().getAge());
+        System.out.println(s1.getActor1().getName());
+        System.out.println(s1.getActor1().getAge());
         System.out.println(s1.getActor1().getGender());
         System.out.println(s1.getActor2().getName());
         System.out.println(s1.getActor2().getAge());
