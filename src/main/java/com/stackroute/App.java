@@ -18,12 +18,6 @@ public class App
         System.out.println(s1.getActor1().getName());
         System.out.println(s1.getActor1().getAge());
         System.out.println(s1.getActor1().getGender());
-        System.out.println(s1.getActor2().getName());
-        System.out.println(s1.getActor2().getAge());
-        System.out.println(s1.getActor2().getGender());
-        System.out.println(s1.getActor3().getName());
-        System.out.println(s1.getActor3().getAge());
-        System.out.println(s1.getActor3().getGender());
         System.out.println(s1==s2);
     }
 }

@@ -11,24 +11,10 @@ import org.springframework.context.annotation.Scope;
 public class MovieConfig {
     @Bean
     public Actor shahrukh() {
-        Actor m = new Actor("Shahrukh", "Male", 50);
-
-        return m;
-
-    }
-
-    @Bean
-    public Actor amir() {
-        Actor m = new Actor("Amir", "Male", 55);
-
-        return m;
-
-    }
-
-    @Bean
-    public Actor salman() {
-        Actor m = new Actor("Salman", "Male", 53);
-
+        Actor m = new Actor();
+        m.setAge(53);
+        m.setName("Shahrukh khan");
+        m.setGender("Male");
         return m;
 
     }
@@ -36,7 +22,6 @@ public class MovieConfig {
     @Bean({"movie1","movie2"})
     @Scope(value = "prototype")
     public Movie movie1() {
-        Movie n = new Movie(shahrukh(), amir(), salman());
-        return n;
+        return new Movie();
     }
 }
